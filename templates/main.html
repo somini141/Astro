@@ -1,0 +1,226 @@
+{% load static %}
+<html>
+	<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Astro</title>
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+      <link rel="shortcut icon" href="images/logo.png" type="images/x-icon">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+<div class="wrapper">
+  <header class="page-header">
+      
+      <nav class="flex-container">
+        <img src="{% static 'images/logo.png' %}" alt="Astro" width=70px height=70px>
+            <div><a href="#" id="open-modal">КАРТА ТАРО</a></div>
+            <div><a href="#skach">ПРИЛОЖЕНИЕ</a></div>
+            <div><a href="#contacts">КОНТАКТЫ</a></div>
+       </nav>
+  </header>
+
+
+<main class="page-main">
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Гадание на карте дня</h2>
+        <p>Нажмите на кнопку ниже, чтобы получить карту дня с предсказанием.</p>
+        
+        <button id="get-card-btn">КАРТА ДНЯ</button>
+        
+        <div id="card-container" class="clearfix">
+            <img src="" id="card-image" alt="Карта дня">
+            <div id="card-text"></div>
+        </div>
+    </div>
+</div>
+
+
+  <div class="first">
+  <p class="H1">ТВОЙ ПЕРСОНАЛЬНЫЙ АСТРОЛОГ</p>
+
+  <div class="ramka">Ежедневно нас окружает множество людей, но нам всегда интересно, кто они и чего мы можем от них ожидать. Astra может помочь вам лучше понять людей, с которыми вы общаетесь.</div>
+
+  <p class="H1">ФУНКЦИИ</p>
+  <div class="spisok">
+    <div class="H2"><svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="20,2 25,14 38,14 27,22 31,35 20,28 9,35 13,22 2,14 15,14" fill="#FFFE9E" />
+</svg><p>Приложение Astra простое и содержит все необходимое, чтобы узнать о себе и окружающих вас людях.</p></div>
+<div class="H2"><svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="20,2 25,14 38,14 27,22 31,35 20,28 9,35 13,22 2,14 15,14" fill="#FFFE9E" />
+</svg><p>Узнайте о себе Вы получите подробное и точное описание вашей личности, ваших слабых и сильных сторон.</p></div>
+<div class="H2"><svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="20,2 25,14 38,14 27,22 31,35 20,28 9,35 13,22 2,14 15,14" fill="#FFFE9E" />
+</svg><p>Узнайте о людях вокруг В разделе «Люди» вы можете получить подробное описание любого человека.</p></div>
+<div class="H2"><svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="20,2 25,14 38,14 27,22 31,35 20,28 9,35 13,22 2,14 15,14" fill="#FFFE9E" />
+</svg> <p>Узнайте больше о своих друзьях, семье или коллегах, чтобы лучше понять их.</p></div>
+<div class="H2"><svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="20,2 25,14 38,14 27,22 31,35 20,28 9,35 13,22 2,14 15,14" fill="#FFFE9E" />
+</svg><p>Соответствие Узнайте, как вы подходите друг другу с вашим нынешним или потенциальным партнером. </p></div>
+<div class="H2"><svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="20,2 25,14 38,14 27,22 31,35 20,28 9,35 13,22 2,14 15,14" fill="#FFFE9E" />
+</svg><p>Знание своих точек напряжения может помочь вам сохранить счастливые отношения на десятилетия.</p></div>
+</div>
+
+<div class="ramka">Ваш личный астролог Astra может полностью заменить настоящую профессиональную астрологию.</div>
+</div>
+<div class="line"></div>
+
+<section id="skach"></section>
+<div class="second">
+  
+  <img src="{% static 'images/pril.png' %}" alt="Astro" width=340px height=585px>
+
+  <div class="skachat">
+   
+    <p class="H1">СКАЧАТЬ</p> <br>
+    <div class="knopki">
+      <a href="https://play.google.com/store/apps/details?id=com.ndyuiklui"><img src="{% static 'images/google.png' %}" alt="Google play" width=281px height=80px></a><br>
+      <a href="https://apps.apple.com/ru/app/astro-гороскоп-астрология/id1289401308"><img src="{% static 'images/app.png' %}" alt="App store" width=281px height=80px></a>
+    </div>
+  
+  </div>
+
+</div>
+
+
+<div class="line"></div>
+
+
+<div class="block" id="feedback-form"><div class="forma">
+  <p class="H1">ФОРМА ОБРАТНОЙ СВЯЗИ</p>
+
+     {% if messages %}
+      {% for message in messages %}
+        <div class="alert {% if message.tags %}{{ message.tags }}{% endif %}"
+             style="{% if message.tags == 'success' %}color:#FFFE9E;{% else %}color:#ff6b6b;{% endif %}
+                    text-align:center; margin:20px 0; padding:10px; border-radius:5px;">
+          {{ message }}
+        </div>
+      {% endfor %}
+    {% endif %}
+
+    <form method="post" action="{% url 'user:connecting' %}">
+      {% csrf_token %}
+
+       <label for="full_name">ФИО</label>
+      <input type="text" id="full_name" name="full_name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Телефон</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <button type="submit">Отправить</button>
+    </form>
+  </div>
+</div>
+
+</main>
+
+<footer class="page-footer">
+  <section id="contacts">
+      <div class="information">
+        <div class="content-inform">
+          <p class="H1">КОНТАКТЫ</p>
+          <div class="H2">
+            <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="20,2 25,14 38,14 27,22 31,35 20,28 9,35 13,22 2,14 15,14" fill="#FFFE9E" />
+          </svg><p>info@astra.ru</p></div>
+          <div class="H2"><svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="20,2 25,14 38,14 27,22 31,35 20,28 9,35 13,22 2,14 15,14" fill="#FFFE9E" />
+        </svg><p>+7(812)111-22-33</p></div>
+          <br>
+          <p class="H1">ЮРИДИЧЕСКИЙ АДРЕС</p>
+          <div class="H2"><svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="20,2 25,14 38,14 27,22 31,35 20,28 9,35 13,22 2,14 15,14" fill="#FFFE9E" />
+        </svg><p>Россия, 191186, Санкт-Петербург, ул. Большая Морская, 18</p></div>
+      </div>
+    <div class="map">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7ff935554f484841ea9be35ea8cafd568188fb03f84b28eea1a807bc39b23d82&amp;width=450&amp;height=360&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+      </div>
+  </section>
+    </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+
+    const cardsData = {{ cards_json|safe }};
+
+    $(document).ready(function() {
+        // Открытие модального окна
+        $("#open-modal").click(function() {
+            $("#myModal").show();
+        });
+        
+        // Закрытие модального окна
+        $(".close").click(function() {
+            $("#myModal").hide();
+            $("#card-container").hide();
+        });
+
+        // Получение карты дня
+        $("#get-card-btn").click(function() {
+            if (cardsData.length === 0) {
+                alert("Нет доступных карт");
+                return;
+            }
+
+            // Анимация загрузки
+            $("#card-container").hide();
+            $("#get-card-btn").text("Выбираем карту...").prop("disabled", true);
+
+            setTimeout(function() {
+                const randomCard = cardsData[Math.floor(Math.random() * cardsData.length)];
+
+                // Устанавливаем данные карты
+                $("#card-image").attr("src", "{% static '' %}" + randomCard.image);
+                $("#card-text").html(`
+                    <h3>${randomCard.name}</h3>
+                    <div class="strong">Значение:</div>
+                    <p>${randomCard.description_meaning} </p>
+                    <br>
+                    <div class="strong">Совет:</div>
+                    <p>${randomCard.description_advance}</p>
+                `);
+                
+                // Показываем карту с анимацией
+                $("#card-container").show();
+                $("#get-card-btn").text("КАРТА ДНЯ").prop("disabled", false);
+            }, 500); // Имитация задержки запроса к базе данных
+        });
+        
+        // Закрытие модального окна при клике вне его
+        $(window).click(function(event) {
+            if (event.target == document.getElementById("myModal")) {
+                $("#myModal").hide();
+                $("#card-container").hide();
+            }
+        });
+    });
+
+    // Плавный скролл к форме при наличии якоря в URL
+    document.addEventListener('DOMContentLoaded', function() {
+        if (window.location.hash === '#feedback-form') {
+            const formElement = document.getElementById('feedback-form');
+            if (formElement) {
+                formElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    });
+
+</script>
+</body>
+</html>
