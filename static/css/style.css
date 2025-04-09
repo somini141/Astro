@@ -13,6 +13,11 @@ p{
     font-size: 14px;
 }
 
+.ps{
+    font-size: 8px;
+    font-weight: 200;
+}
+
 .strong{
     font-weight: 500;
     font-size: 18px;
