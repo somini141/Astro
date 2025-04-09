@@ -6,8 +6,8 @@ from .forms import SiteUserForm
 
 logger = logging.getLogger(__name__)
 
-TELEGRAM_TOKEN = '7832398447:AAHgjyQSnQAwF_7FbEPm8IafB5ET49uauqg'
-TELEGRAM_CHAT_ID = '-4738416200'
+TELEGRAM_TOKEN = ''
+TELEGRAM_CHAT_ID = ''
 
 
 def home(request):
